@@ -16,8 +16,8 @@ async function Whatsappapi(req, res) {
     templateParams: ["This", "just", "totest", "API", "Fms"], // Dynamic message content
     source: "new-landing-page form",
     media: {
-      // url: url,
-      url: "https://whatsapp-media-library.s3.ap-south-1.amazonaws.com/IMAGE/6353da2e153a147b991dd812/4958901_highanglekidcheatingschooltestmin.jpg",
+      url: url,
+      // url: "https://whatsapp-media-library.s3.ap-south-1.amazonaws.com/IMAGE/6353da2e153a147b991dd812/4958901_highanglekidcheatingschooltestmin.jpg",
       filename: "sample_media",
     },
     tags: "", // Can be set if required, leave empty if not

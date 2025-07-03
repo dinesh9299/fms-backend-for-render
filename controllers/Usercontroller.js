@@ -120,7 +120,7 @@ exports.registerUser = async (req, res) => {
     await newUser.save();
 
     // Prepare login URL and mail content
-    const loginUrl = "https://yourdomain.com/login"; // change to your frontend login URL
+    const loginUrl = "https://fms.brihaspathi.com/login"; // change to your frontend login URL
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: email,
