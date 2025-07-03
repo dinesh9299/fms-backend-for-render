@@ -151,7 +151,7 @@ exports.uploadFile = async (req, res) => {
       .map((uid) => ({ userId: uid, seen: false }));
 
     const notification = new Notificationmodel({
-      message: `${name}`,
+      message: `Granted access to "${name}" from ${createdbyName}`,
       time: new Date(),
       recipients,
       by,
