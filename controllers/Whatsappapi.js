@@ -10,14 +10,15 @@ async function Whatsappapi(req, res) {
   // Prepare the request payload
   const requestData = {
     apiKey: apiKey,
-    campaignName: "vms_image", // Campaign name, ensure this is correct
+    campaignName: "fms", // Campaign name, ensure this is correct
     destination: destination, // Dynamic phone number
-    userName: "ganesh@brihaspathi.com", // Example username, ensure this is dynamic if necessary
-    templateParams: ["This", "just", "totest", "API", "Fms"], // Dynamic message content
+    userName: "BRIHASPATHI TECHNOLOGIES PRIVATE LIMITED", // Example username, ensure this is dynamic if necessary
+    templateParams: [], // Dynamic message content
     source: "new-landing-page form",
     media: {
-      url: url,
-      // url: "https://whatsapp-media-library.s3.ap-south-1.amazonaws.com/IMAGE/6353da2e153a147b991dd812/4958901_highanglekidcheatingschooltestmin.jpg",
+      // url: url,
+    // url: "https://whatsapp-media-library.s3.ap-south-1.amazonaws.com/IMAGE/6353da2e153a147b991dd812/4958901_highanglekidcheatingschooltestmin.jpg",
+      url= "https://whatsapp-media-library.s3.ap-south-1.amazonaws.com/FILE/6353da2e153a147b991dd812/4079142_dummy.pdf"
       filename: "sample_media",
     },
     tags: "", // Can be set if required, leave empty if not
